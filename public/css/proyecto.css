@@ -1,0 +1,50 @@
+#proyecto{
+    padding-top: 10%
+}
+.texto{
+    border-bottom: 2px solid #C09A24;
+}
+.parrafo{
+    text-align: justify;
+    padding: 15px;
+}
+.titulo{
+    font-size: 2em;
+    padding: 10px;
+    font-weight: bold;
+    color: #000;
+}
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+    #proyecto{
+        padding-top: 25%
+    }
+    .titulo{
+        font-size: 20px;
+        padding: 4px;
+        font-weight: bold;
+        color: #000;
+        text-align: center;
+    }
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+    #proyecto{
+        padding-top: 25%
+    }
+    #imgen-modena{
+        padding-top: 50px;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}

@@ -1,0 +1,1581 @@
+/*
+Author       : Theme_ocean.
+Template Name: Fury - Product Landing Page
+Version      : 1.0
+*/
+/*=============================================================
+    CSS INDEX
+    =============================
+    01. GENERAL STYLE (body, link color, section-title, preloader btn, overlay, section-padding etc)
+    02. START BOOTSTRAP NAVIGATION OVERRIDES
+    03. START HOME DESIGN
+    04. START ABOUT DESIGN
+    05. START SERVICE DESIGN
+    06. START PORTFOLIO DESIGN
+    07. START PROMOTION DESIGN
+    08. START TEAM DESIGN
+    09. START TESTIMONIAL DESIGN
+    10. START PRICING DESIGN
+    11. START NEWSLETTER DESIGN
+    12. START PARTNER DESIGN
+    13. START BUY NOW DESIGN
+    14. START CONTACT ADDRESS DESIGN
+    15. START FOOTER DESIGN
+  =============================================================*/
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GENERAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+#indicadores {
+    background: #282828;
+    padding: 22px 10px;
+    border-radius: 6px;
+    margin-top: -85px !important;
+    position: absolute;
+    left: 9%;
+}
+.navbar-header{width: 36%}
+@media (max-width: 360px){
+    .navbar-header{width: auto}
+}
+@media (max-width: 375px){
+    .navbar-header{width: auto}
+}
+@media (max-width: 425px){
+    .navbar-header{width: auto}
+}
+.row{margin-right: 0!important;}
+#indicadores>ul {
+    padding: 0;
+    margin: 0;
+}
+#indicadores li:first-child {
+    color: #e0b913;
+}
+#indicadores ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 30px;
+}
+.list-indicador > span {
+    background: white;
+    padding: 8px 28px;
+    color: #282828;
+    border-radius: 4px;
+}
+.bs {
+    background: #e0b913 !important;
+    color: #282828 !important;
+}
+@font-face {
+    font-family: roboto-black;
+    src:url("Roboto-Black.ttf");
+}
+@font-face {
+    font-family: roboto-italic;
+    src:url("Roboto-BoldItalic.ttf");
+}
+@font-face {
+    font-family: roboto-regular;
+    src:url("Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: roboto-condensed;
+    src:url("RobotoCondensed.ttf");
+}
+
+@font-face {
+    font-family: roboto-condensed-bold;
+    src:url("RobotoCondensed-Bold.ttf");
+}
+
+body {
+color: #555;
+font-family: 'Ubuntu', sans-serif;
+font-size: 16px;
+font-weight: 300;
+line-height: 24px;
+background:#fff;
+overflow-x:hidden;
+}
+html,
+body { height: 100% }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0px;
+  margin-top: 0px; 
+  color: black;
+  font-weight: bold;
+}
+p, a{font-family: 'roboto-regular'}
+a {
+text-decoration: none;
+transition: all 0.2s ease 0s;
+}
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+p {
+    margin-bottom: 0;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-input-placeholder {
+  font-weight: 300;
+  font-family: 'Ubuntu', sans-serif; }
+
+:-moz-placeholder {
+  font-weight: 300;
+  font-family: 'Ubuntu', sans-serif; }
+
+::-moz-placeholder {
+  font-weight: 300;
+  font-family: 'Ubuntu', sans-serif; }
+
+:-ms-input-placeholder {
+  font-weight: 300;
+  font-family: 'Ubuntu', sans-serif; }
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+/*START PRELOADER DESIGN*/
+.preloader {
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.status-mes {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -40px 0 0 -40px;
+    font-size: 10px;
+    text-indent: -12345px;
+    border-top: 8px solid #ffb900;
+    border-right: 8px solid #ffb900;
+    border-bottom: 8px solid #ffb900;
+    border-left: 8px solid #fff;
+    border-radius: 50%;
+    -webkit-animation: spinner 700ms infinite linear;
+    animation: spinner 700ms infinite linear;
+    z-index: 10000;
+}
+
+@-webkit-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.status-mes h4 {
+color: #edf3fe;
+position:relative;
+font-size:24px;
+margin-top: 30px;
+text-transform: capitalize;
+letter-spacing: 1px;
+}
+.no-padding { padding: 0 }
+/*END PRELOADER DESIGN*/
+.section-padding {padding-left: 20px;}
+/*START SECTION TITLE DESIGN*/
+.section-title{margin-bottom:60px;}
+.section-title  h1 {
+font-size: 40px;
+font-weight: 500;
+margin-top: 0;
+position: relative;
+/*text-transform: capitalize;*/
+}
+h1.section-title-white{
+font-size: 60px;
+font-weight: 900;
+margin-top: 0;
+position: relative;
+text-transform: capitalize;
+}
+p.section-title-white{color:#fff;}
+@media only screen and (max-width:480px) { 
+.section-title  h1  {font-size:30px;}
+}
+.section-title span{
+background: #ffb900 none repeat scroll 0 0;
+border-radius: 2px;
+display: block;
+height: 4px;
+margin: 20px auto;
+width: 60px;
+}
+.section-title-white-span{background: #fff !important;}
+.section-title-white{color:#fff;position:relative;}
+.section-title  p{
+padding: 0 10px;
+width: 50%;
+margin: auto;	
+}
+@media only screen and (max-width:480px) { 
+.section-title  p{
+padding: 0 10px;
+width: 90%;
+margin: auto;	
+}
+}
+/*END SECTION TITLE DESIGN*/
+/*START SCROLL TO TOP*/
+.topcontrol {
+background: #ffb900 none repeat scroll 0 0;
+border-radius: 30px;
+bottom: 5px;
+box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+color: #fff;
+cursor: pointer;
+font-size: 18px;
+height: 50px;
+line-height: 50px;
+opacity: 1;
+position: fixed;
+right: 5px;
+text-align: center;
+transition: all 0.2s ease 0s;
+width: 50px;
+}
+.topcontrol:hover {
+    background: #222;
+    color: #fff;
+}
+/*END SCROLL TO TOP*/
+
+/*START BTN STYLES*/
+.app-btn {
+background: #ffb900 none repeat scroll 0 0;
+border: 1px solid #ffb900;
+border-radius: 30px;
+box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+color: #fff;
+margin-right: 15px;
+padding: 15px 40px;
+text-transform: capitalize;
+transition: all 0.2s ease 0s;
+}
+.app-btn i{ margin-right: 5px;}
+.app-btn:hover,
+.app-btn:focus{box-shadow:none;}
+.app-btn-two {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+  color: #333;
+  margin-right: 15px;
+  padding: 15px 40px;
+  transition: all 0.2s ease 0s;
+}
+.app-btn-two i{ color:#333;margin-right: 5px;}
+.app-btn-two:hover,
+.app-btn-two:focus{color:#333;box-shadow:none;}
+
+.google-btn {
+background: #005bbc none repeat scroll 0 0;
+border: 1px solid #005bbc;
+border-radius: 30px;
+box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+color: #fff;
+margin-right: 15px;
+padding: 15px 40px;
+transition: all 0.2s ease 0s;
+}
+.google-btn i{ margin-right: 5px;}
+.google-btn:hover,
+.google-btn:focus{box-shadow:none;}
+/*END BTN STYLES*/
+/*
+* ----------------------------------------------------------------------------------------
+* 01.END GENERAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02.START BOOTSTRAP NAVIGATION OVERRIDES
+* ----------------------------------------------------------------------------------------
+*/
+.navbar-default {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    width: 100%;
+    padding:0;
+    background: #fff;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #ffb900 !important;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    color: #ffb900 !important;
+    background-color: transparent;
+}
+.navbar-nav {
+  float: left;
+  margin: 7px 0 0;
+}
+.navbar-brand {
+height: auto;
+padding: 0;
+ }
+.navbar-brand img {
+	width: 150px;
+}
+@media only screen and (max-width:768px) { 
+    .navbar-brand img {
+        margin-left: 10px;
+    }
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form { border-color: #fff }
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+border-color: #fff;
+margin-top: 0px;
+}
+.menu-top { background: rgba(0, 0, 0, 0) none repeat scroll 0 0 }
+.menu-top li a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #282828!important;
+}
+@media only screen and (max-width:768px) { 
+    .navbar-default .navbar-nav > li > a {
+        margin-top: 10px;
+        padding: 8px;
+    }
+}
+@media only screen and (max-width:480px) { 
+    .menu-top { background-color: #fff }
+    .navbar-default .navbar-nav > li > a {color:#333  !important }
+}
+.navbar-default.menu-shrink {
+    background-color: #282828;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
+    
+    width: 100%;
+}
+@media only screen and (max-width:480px) { 
+    .menu-top {
+        color: #222 !important;
+        margin-left: 0px;
+    }
+}
+.navbar-default.menu-shrink li a { color:white !important; }
+.navbar-default.menu-shrink li a:hover { color: #ffb900 !important }
+.navbar-default .navbar-toggle { background: #fff none repeat scroll 0 0; right: 0;position: absolute;  }
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { background-color: #fff }
+.navbar-default .navbar-toggle .icon-bar { background-color: #ffb900;}
+.block-menu{
+background: #e0b913 none repeat scroll 0 0;
+border-radius: 6px;
+box-shadow:0 5px 40px 0 rgba(42, 111, 199, 0.2);
+color: black;
+display: inline-block;
+margin-top: 0;
+padding:5px 20px!important;
+transition: all 0.3s ease 0s;
+}
+.block-menu:hover{
+background: #fff none repeat scroll 0 0!important;
+color: #333!important;}
+.navbar-default.menu-shrink li a.block-menu {background: #fff none repeat scroll 0 0!important; color:#333 !important; }
+
+.navbar-default.menu-shrink li a.block-menu:hover { color:#333 !important; }
+@media only screen and (max-width:480px) { 
+    .navbar-default .navbar-nav > li > a.block-menu{color:#333  !important }
+    .navbar-default .navbar-nav > li > a.block-menu:hover{color:#333  !important }
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 02.END BOOTSTRAP NAVIGATION OVERRIDES
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 03.START HOME DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.home-parallax {position: relative;height:670px;}
+@media only screen and (min-width:1441px) { 
+    .home-parallax {height: 900px;}
+    #indicadores {
+        left: 25%;
+    }
+}
+@media only screen and (max-width:1070px) { 
+    .home-parallax {height: 800px;}
+    .navbar-header {
+        width: 204px !important;
+        padding-top: 3px !important;
+    }
+    .indicador-text{
+        width: 100% !important;
+    }
+    #indicadores {
+        left: 4%;
+    }
+    .list-indicador{
+        background: #fff;
+        border-radius: 5px
+    }
+    .list-yellow{
+        background-color: #E0B913 !important;
+        border-radius: 5px !important;
+    }
+    #indicadores ul li {
+        margin-left: 4px;
+        font-size: 0.6em;
+        width: 40%;
+    }
+    .list-indicador > span{
+        width: 100%;
+        padding: 5px;
+    }
+    .indicador-span{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:768px) { 
+.home-parallax {height: 800px;}
+}
+@media only screen and (max-width:480px) { 
+.home-parallax {height: 550px;}
+}
+@media only screen and (max-width:360px) { 
+.home-parallax {height: 550px;}
+}
+@media only screen and (max-width:320px) { 
+.home-parallax {height: 550px;}
+h1{font-size: 24px;}
+.single_about{padding:0;}
+video{width: 100%!important}
+}
+.home-parallax:before {
+    background: rgba(0, 0, 0, 0) url("./pattern.png") repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+.pt250{padding-top:250px;}
+@media only screen and (max-width:480px) { 
+.pt250{padding-top:200px;}
+}
+.hero-text h2 {
+color: #fff;
+font-size: 50px;
+font-weight: 600;
+line-height: 64px;
+margin: 0;
+text-transform: capitalize;
+}
+@media only screen and (max-width:768px) { 
+    .hero-text h2 {
+        font-size: 40px;
+        line-height: 54px;
+    }
+    .navbar-header {
+        width: 174px !important;
+        padding-top: 15px !important;
+    }
+    .navbar-default .navbar-nav > li > a {
+        font-size: 0.8em;
+    }
+    #indicadores {
+        left: 3%;
+    }
+}
+
+@media only screen and (max-width:480px) { 
+    .hero-text h2 {
+        font-size: 34px;
+        line-height: 45px;
+    }
+    .navbar-header {
+        width: 179px !important;
+        padding-top: 10px !important;
+    }
+}
+@media only screen and (max-width:360px) { 
+    .hero-text h2 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .navbar-header {
+        width: 315px !important;
+    }
+}
+.hero-text p {
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+.home_btn {
+  margin-left: -10px;
+}
+.home_btn a {
+background: transparent none repeat scroll 0 0;
+border: 2px solid #fff;
+border-radius: 30px;
+color: #fff;
+display: inline-block;
+font-weight: 500;
+letter-spacing: 0;
+margin: 0 10px 15px;
+padding: 10px 35px;
+text-transform: uppercase;
+transition: all 0.3s ease 0s;
+}
+.home_btn a:hover{
+background:#fff;color:#333;
+}
+.home_btn a i{
+font-size: 20px;
+margin-right: 5px;
+vertical-align: middle;
+}
+.hero-text-img {
+    padding-top: 200px;
+}
+.hero-text-img img {
+  width: 406px;
+}
+@media only screen and (max-width:768px) { 
+.hero-text-img{padding-top: 58px; }
+}
+@media only screen and (max-width:480px) { 
+.hero-text-img{
+display: inline-block;
+padding-top: 112px;
+}
+.hero-text-img img {width: 100%;}
+}
+@media only screen and (max-width:414px) { 
+.hero-text-img{padding-top: 138px; }
+}
+@media only screen and (max-width:375px) { 
+.hero-text-img{padding-top: 128px; }
+}
+@media only screen and (max-width:360px) { 
+.hero-text-img{padding-top: 116px; }
+}
+@media only screen and (max-width:320px) { 
+.hero-text-img{padding-top: 171px; }
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 03.END HOME DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+ * ----------------------------------------------------------------------------------------
+ * 04.START ABOUT DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+.single_about{padding: 68px 0 68px 0;text-align: right;}
+.single_about h1{
+font-size: 40px;
+font-weight: 600;
+margin-bottom:15px;
+text-transform: capitalize;
+}
+.owl-controls{position: absolute;top: 68px;}
+.single_about p{color: #777;line-height: 22px;}
+.single_about ul{list-style:none;}
+.single_about ul li{font-size: 18px;
+margin-bottom: 10px;}
+.single_about ul li i{
+border: 1px solid #ffb900;
+border-radius: 30px;
+color: #ffb900;
+height: 35px;
+line-height: 35px;
+margin-right: 10px;
+text-align: center;
+width: 35px;
+}
+.single_about_img {
+display: inline-block;
+text-align: center;
+}
+@media only screen and (max-width:768px) { 
+.single_about_img {margin-bottom:60px;margin-top:60px;}
+}
+.owl-theme .owl-controls {
+   /* margin-top: 50px;*/
+    text-align: center;
+}
+.owl-theme .owl-controls .owl-page { display: inline-block }
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div { cursor: pointer }
+.owl-theme .owl-controls .owl-page span {
+background-color: #ffb900 !important;
+border-radius: 20px;
+display: block;
+height: 12px;
+margin: 5px 7px;
+width: 12px;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span { background-color: #fff }
+.owl-theme .owl-controls {
+  display: block !important;
+  margin-top: 20px;
+  text-align: center;
+}
+/*
+ * ----------------------------------------------------------------------------------------
+ * 04.END ABOUT DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+
+
+/*
+ * ----------------------------------------------------------------------------------------
+ * 05.START FEATURE DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+.main_feature {position: relative;}
+.main_feature:before {
+    background:rgba(0, 0, 0, 0) linear-gradient(rgba(34, 38, 75, 0.5), rgba(34, 38, 75, 0.5)) repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+.single-feature {
+background: #fff none repeat scroll 0 0;
+border-radius: 4px;
+margin-bottom: 60px;
+padding: 30px 20px;
+}
+@media only screen and (max-width:480px) { 
+.single-feature {margin-bottom:60px;}
+}
+.single-feature i{
+background: #ffb900 none repeat scroll 0 0;
+border: 1px solid #ffb900;
+border-radius: 100px;
+box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+color: #fff;
+font-size: 24px;
+height: 60px;
+left: 0;
+line-height: 56px;
+margin: -30px auto auto;
+position: absolute;
+right: 0;
+text-align: center;
+top: 0;
+transition: all 0.3s ease 0s;
+width: 60px;
+}
+.single-feature h4{
+font-size: 18px;
+font-weight: 500;
+margin-top: 20px;
+text-transform: uppercase;
+}
+.single-feature p{}
+
+/*
+ * ----------------------------------------------------------------------------------------
+ * 05.END FEATURE DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+
+/*
+ * ----------------------------------------------------------------------------------------
+ * 06.START FEATURE TWO & THEEE DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+.single-feature-two{margin-bottom: 30px;}
+.single-feature-two i{
+color: #ffb900 ;    
+font-size: 24px;
+margin-bottom: 20px;
+}
+.single-feature-two h4{
+font-weight: 600;
+margin-bottom: 10px;
+text-transform: uppercase;
+}
+.single-feature-two p{}
+.main_feature_three{border-top:1px solid #eee;}
+.single_future_img_one {
+display: inline-block;
+text-align: center;
+margin-top:80px;
+}
+@media only screen and (max-width:768px) { 
+.single_future_img_one{margin-top:60px;}
+}
+.single_future_img_two{
+display: inline-block;
+text-align: center;
+margin-top:80px;	
+}
+.single_future_img_two{
+	
+}
+/*
+ * ----------------------------------------------------------------------------------------
+ * 05.END FEATURE TWO & THEEE DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+ * ----------------------------------------------------------------------------------------
+ * 06.START VIDEO DESIGN
+ * ----------------------------------------------------------------------------------------
+*/ 
+.video_section {
+position: relative;
+background-position: center top;
+background-repeat: repeat-y;
+padding: 200px 0;}
+.video_section:before {
+    background:rgba(0,0,0, 0.4);
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.mfp-iframe-holder .mfp-content {
+  line-height: 0;
+  margin-top: 55px;
+  max-width: 900px;
+  width: 100%;
+}
+.company_video h2{
+color: #fff;
+margin-bottom: 30px;}
+.company_video a{
+background: #fff none repeat scroll 0 0;
+border-radius: 100px;
+color: #ffb900;
+display: block;
+font-size: 30px;
+height: 100px;
+line-height: 100px;
+margin: auto;
+padding-left: 5px;
+padding-top: 2px;
+text-align: center;
+width: 100px;	
+}
+/*
+ * ----------------------------------------------------------------------------------------
+ * 06.END VIDEO DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+
+/*
+ * ----------------------------------------------------------------------------------------
+ * 07.START PRODUCT OVERVIEW DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+.single_overview_img{}
+.single_overview_img img{
+margin: auto;	
+}
+@media only screen and (max-width:768px) { 
+.single_overview_img img{
+width: 100%;
+margin: auto;
+margin-bottom:60px;	
+}
+}
+.single_overview{
+padding-top: 80px;	
+}
+@media only screen and (max-width:768px) { 
+.single_overview{padding-top:0px;}
+.single_overview_m {margin-bottom:100px;}
+.owl-theme .owl-controls .owl-buttons .owl-next{display: none;}
+}
+.single_overview h3{
+font-size: 40px;
+font-weight: 600;
+margin-bottom: 20px;
+text-transform: capitalize;	
+}
+.single_overview p{}
+.overview_btn{margin-top: 30px;}
+.overview_btn a{}
+.overview-two{border-top:1px solid #eee;}
+/*
+ * ----------------------------------------------------------------------------------------
+ * 07.END PRODUCT OVERVIEW DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+
+/*
+ * ----------------------------------------------------------------------------------------
+ * 08.START PRODUCTS DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+.products-features{background:#edf3fe;}
+.single_product_features{
+background: #fff none repeat scroll 0 0;
+border-radius: 3px;
+box-shadow: 0 2px 2px 0 rgba(42, 111, 199, 0.2);
+margin: 15px 15px 10px;
+padding: 20px;
+}
+.single_product_features h2{
+border-bottom: 1px solid #eee;
+font-size: 26px;
+font-weight: 600;
+margin-bottom: 15px;
+padding-bottom: 10px;
+text-transform: uppercase;	
+}
+.single_product_features h3{
+color: #ffb900;
+font-size: 30px;
+font-weight: 600;
+margin-bottom: 30px;
+}
+.single_product_features img{display: inline-block;}
+.products_overview_btn{margin: 40px 0 20px;}
+/*
+ * ----------------------------------------------------------------------------------------
+ * 08.END PRODUCTS DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+/*
+ * ----------------------------------------------------------------------------------------
+ * 09.START TESTIMONIAL DESIGN
+ * ----------------------------------------------------------------------------------------
+
+.testimonial{
+    padding: 20px 40px 20px 70px;
+    margin: 0 10px 60px;
+    position: relative;
+}
+/*.testimonial:before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid #eee;
+    border-left: 50px solid #fff;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+}*/
+.art{border: 1px solid #ccc; background: white;padding: 25px;border-radius: 4px;margin-bottom: 12px;}
+.art p{font-size: 11px; text-align: justify;line-height: 20px;}
+.art h4{font-size: 14px}
+.art .link{font-style: inherit;color: #777;text-decoration: underline; float: right;font-size: 12px }
+.art img{max-width: 100%; min-width: 100%;}
+.testimonial .testimonial-title{
+font-size: 18px;
+font-weight: 500;
+margin-bottom: 15px;
+}
+
+/*.testimonial .post{
+color: #ffb900;
+display: block;
+font-weight: 400;
+margin-top: 10px;
+}
+.testimonial .pic{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    bottom: -35px;
+    right: 23px;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+}
+.owl-theme .owl-controls {
+  display: block!important;
+  /*margin-top: 10px;
+  text-align: center;
+}
+.owl-theme .owl-controls{
+    /*margin-top: 40px;
+}
+
+@media only screen and (max-width: 767px){
+    .owl-theme .owl-controls{ margin-top: 20px; }
+}
+@media only screen and (max-width: 480px){
+    .testimonial{
+        margin: 0 10px 60px;
+        text-align: center;
+        padding: 20px 30px 20px 40px;
+    }
+}
+@media only screen and (max-width: 479px){
+    .testimonial{
+        padding: 20px 25px 20px 25px;
+    }
+}*/
+/*
+ * ----------------------------------------------------------------------------------------
+ * 09.END TESTIMONIAL DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 10.START FAQ DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.owl-theme .owl-controls .owl-buttons div{
+background: transparent none repeat scroll 0 0;
+border-radius: 0;
+opacity: 1;
+position: absolute;
+right: 0;   
+padding: 5px 15px;
+}
+.owl-carousel .owl-wrapper-outer{
+    padding-bottom: 48px
+}
+.owl-theme .owl-controls .owl-buttons .owl-next{
+    left: 1138px;
+}
+.owl-prev:before,
+.owl-next:before{
+    content: "\f053";
+    font-family: 'FontAwesome';
+    color: #ccc;
+}
+.owl-next:before{
+    content: "\f054";
+}
+.template_faq{background:#edf3fe;}
+.panel-group {
+background: #fff none repeat scroll 0 0;
+border-radius: 3px;
+box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.04);
+margin-bottom: 0;
+padding: 30px;
+}
+#accordion .panel{
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0 0 15px 10px;
+}
+#accordion .panel-heading{
+    padding: 0;
+    border-radius: 30px;
+}
+#accordion .panel-title a{
+    display: block;
+    padding: 12px 20px 12px 50px;
+    background: #ffb900;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+#accordion .panel-title a.collapsed{
+    background: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+}
+#accordion .panel-title a:after,
+#accordion .panel-title a.collapsed:after{
+    content: "\f107";
+    font-family: fontawesome;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    background: #ffb900;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid transparent;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.58);
+    position: absolute;
+    top: -5px;
+    left: -20px;
+    transition: all 0.3s ease 0s;
+}
+#accordion .panel-title a.collapsed:after{
+    content: "\f105";
+    background: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    box-shadow: none;
+}
+#accordion .panel-body{
+    padding: 20px 25px 10px 9px;
+    background: transparent;
+    border-top: none;
+    position: relative;
+}
+#accordion .panel-body p{
+    padding-left: 25px;
+    border-left: 1px dashed #8c8c8c;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 10.END FAQ DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 11.START NEWSLETTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.newsletter_form {}
+.newsletter_form {
+position: relative;
+padding: 60px 30px;
+}
+.newsletter_form:before {
+    background:rgba(0,0,0, 0.4);
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.newsletter-title {
+color: #fff;
+font-weight: 600;
+margin-bottom: 30px;
+position: relative;
+text-transform: capitalize;
+}
+@media only screen and (max-width:768px) { 
+.newsletter-title {
+font-size: 22px;
+margin-bottom: 30px;
+margin-top: 0;
+text-align: center;
+}
+}
+.newsletter input {
+	background: #fff none repeat scroll 0 0;
+border: 1px solid #eee;
+border-radius:0px !important;
+box-shadow: none;
+color: #333;
+font-size: 14px;
+height: 50px !important;
+}
+.newsletter input:hover,
+.newsletter input:focus {
+background: #fff none repeat scroll 0 0;
+border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: none !important;
+}
+.newsletter_form_border{
+background: #fff none repeat scroll 0 0;
+display: block;
+position: relative;
+height: 2px;
+margin: auto auto 30px;
+width: 100px;	
+}
+.btn-newsletter-bg {
+background: #ffb900 none repeat scroll 0 0;
+border: 2px solid #ffb900;
+border-radius: 0;
+box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.1);
+color: #fff;
+font-size: 14px;
+font-weight:600;
+letter-spacing: 0.5px;
+margin-left: 20px;
+padding: 8px 20px;
+text-transform: uppercase;
+transition: all 0.2s ease 0s;
+}
+@media only screen and (max-width:480px) { 
+.btn-newsletter-bg {padding: 7px 20px;}
+}
+.btn-newsletter-bg:hover,
+.btn-newsletter-bg:focus {
+    background: #fff;
+    color: #333;
+    border: 2px solid #fff;
+}
+@media only screen and (max-width:480px) { 
+.btn-newsletter-bg {margin-left:0px;  }
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 11.END NEWSLETTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+ * ----------------------------------------------------------------------------------------
+ * 12. START TECHNICAL DETAILS DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+.technical_details{
+background:#edf3fe;
+padding-top:60px;
+padding-bottom:30px;
+}
+ .technicalbox{
+background: #fff none repeat scroll 0 0;
+border-radius: 3px;
+box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.04);
+margin-bottom: 30px;
+padding: 60px 30px;
+position: relative;
+}
+.technicalbox .technical-icon{
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 50%;
+    background: #ffb900;
+    font-size: 36px;
+    color: #fff;
+    margin: 0 auto 30px;
+    position: relative;
+    transition: all 500ms ease 0s;
+}
+.technicalbox:hover .technical-icon{
+    transform: scale(0.8, 0.8);
+}
+.technicalbox .technical-icon:after{
+    content: "";
+    width: 111px;
+    height: 111px;
+    border-radius: 50%;
+    border: 4px solid #ffb900;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    opacity: 0;
+    transform: scale(0.8, 0.8);
+    transition: all 500ms ease 0s;
+}
+.technicalbox:hover .technical-icon:after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+.technicalbox .number{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 14px;
+    color: #123a06;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+/*
+ * ----------------------------------------------------------------------------------------
+ * 12.END TECHNICAL DETAILS DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+ 
+/*
+ * ----------------------------------------------------------------------------------------
+ * 13.START DOWNLOAD APP DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+.download_app {
+background:#ffb900;
+padding-top:60px;
+}
+.get_app{padding-top: 60px;}
+@media only screen and (max-width:768px) { 
+.get_app{padding-top:0px;}
+}
+.get_app h2{color: #fff;
+font-weight: 600;
+font-size: 50px;
+margin-bottom: 20px;}
+.get_app span{
+background: #fff none repeat scroll 0 0;
+display: block;
+height: 4px;
+margin: 30px 0 40px;
+width: 100px;
+}
+.get_app p{color:#fff;margin-bottom: 30px;}
+.download_icon{}
+@media only screen and (max-width:768px) { 
+.download_icon{margin-bottom:60px;}
+}
+.download_icon a{}
+@media only screen and (max-width:375px) { 
+.download_icon a {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+}
+.download_icon a i{}
+.get_app_img {
+margin-top: 70px;
+text-align: center;
+}
+/*
+ * ----------------------------------------------------------------------------------------
+ * 13.END DOWNLOAD APP DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 14.START COMPANY PARTNER LOGO
+* ----------------------------------------------------------------------------------------
+*/
+.partner-logo {background: #edf3fe  none repeat scroll 0 0; }
+.partner { text-align: center }
+.partner.owl-theme .owl-controls {display: none!important;}
+/*
+* ----------------------------------------------------------------------------------------
+* 14.END COMPANY PARTNER LOGO
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 22.START FOOTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+footer {
+    position: relative;
+    background: url(../img/linea-blockchain.png) #282828;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+img.img-redsocial{width: 20px;}
+footer li >a {
+    color: white;
+}
+footer li{list-style: none;padding: 5px}
+@media only screen and (max-width:480px) { 
+.footer_social {margin-bottom:60px;}
+}
+.footer_social h4 {
+color: #fff;
+margin-top: 0;
+font-size: 30px;
+}
+.footer_social span {
+background: #ffb900 none repeat scroll 0 0;
+display: block;
+height: 2px;
+margin: 20px 0;
+width: 60px;
+}
+.footer_social ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.footer_social ul li { display: inline-block }
+.footer_social ul li a {
+background: #333 none repeat scroll 0 0;
+border-radius: 50px;
+color: #fff;
+display: block;
+font-size: 18px;
+height: 45px;
+line-height: 45px;
+transition: all 0.2s ease 0s;
+width: 45px;
+text-align: center;
+}
+@media only screen and (max-width:768px) { 
+    .footer_social ul li a { font-size: 12px }
+}
+@media only screen and (max-width:360px) { 
+    .footer_social ul li a { font-size: 14px }
+}
+@media only screen and (max-width:320px) { 
+    .footer_social ul li a { font-size: 14px }
+}
+@media only screen and (max-width:480px) { 
+    .footer_social ul li a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+.footer_social ul li a:hover {
+    background: #ffb900;
+    color: #fff;
+}
+.brtop {
+border-top: 1px solid #333;
+margin-top: 60px;
+padding-top: 30px;
+}
+.footer_address{}
+.footer_address h4 {
+color: #fff;
+margin-top: 0;
+font-size: 30px;
+}
+.footer_address span {
+background: #ffb900 none repeat scroll 0 0;
+display: block;
+height: 2px;
+margin: 20px 0;
+width: 60px;
+}
+.footer_address ul{
+list-style: outside none none;
+    margin: 0;
+    padding: 0;	
+}
+.footer_address ul li{color:#fff;}
+.footer_address{}
+.footer_copyright p {
+    color: #fff;
+    margin: 0;
+    text-transform: capitalize;
+}
+@media only screen and (max-width:480px) { 
+    .footer_copyright p {text-align: center; }
+}
+.footer_menu {
+    float: right;
+    margin-top: 5px;
+}
+@media only screen and (max-width:480px) { 
+    .footer_menu {
+        margin-top: 15px;
+        float: none;
+    }
+}
+.footer_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+@media only screen and (max-width:480px) { 
+    .footer_menu ul { text-align: center }
+}
+.footer_menu ul li { display: inline }
+@media only screen and (max-width:480px) { 
+    .footer_copyright ul li a { text-align: center }
+}
+.footer_menu ul li a {
+    color: #fff;
+    padding: 0 10px;
+    -webkit-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+}
+.footer_menu ul li a:hover { color: #ffb900 }
+/*
+* ----------------------------------------------------------------------------------------
+* 22.END FOOTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.hamburger {
+  /*position: fixed;*/
+  top: 35px;  
+  z-index: 999;
+  display: block;
+  width: 18px;
+  height: 32px;
+  margin-left: 15px;
+  background: transparent;
+  border: none;
+}
+.hamburger:hover,
+.hamburger:focus,
+.hamburger:active {
+  outline: none;
+}
+.hamburger.is-closed:before {
+  content: '';
+  display: block;
+  width: 100px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 32px;
+  text-align: center;
+  opacity: 0;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transition: all .35s ease-in-out;
+}
+.hamburger.is-closed:hover:before {
+  opacity: 1;
+  display: block;
+  -webkit-transform: translate3d(-100px,0,0);
+  -webkit-transition: all .35s ease-in-out;
+}
+
+.hamburger.is-closed .hamb-top,
+.hamburger.is-closed .hamb-middle,
+.hamburger.is-closed .hamb-bottom,
+.hamburger.is-open .hamb-top,
+.hamburger.is-open .hamb-middle,
+.hamburger.is-open .hamb-bottom {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 100%;
+}
+.hamburger.is-closed .hamb-top,
+.hamburger.is-closed .hamb-middle,
+.hamburger.is-closed .hamb-bottom {
+  background-color: white;
+}
+.hamburger.is-closed .hamb-top { 
+  top: 5px; 
+  -webkit-transition: all .35s ease-in-out;
+}
+.hamburger.is-closed .hamb-middle {
+  top: 50%;
+  margin-top: -2px;
+}
+.hamburger.is-closed .hamb-bottom {
+  bottom: 5px;  
+  -webkit-transition: all .35s ease-in-out;
+}
+
+.hamburger.is-closed:hover .hamb-top {
+  top: 0;
+  -webkit-transition: all .35s ease-in-out;
+}
+.hamburger.is-closed:hover .hamb-bottom {
+  bottom: 0;
+  -webkit-transition: all .35s ease-in-out;
+}
+.hamburger.is-open .hamb-top,
+.hamburger.is-open .hamb-middle,
+.hamburger.is-open .hamb-bottom {
+  background-color: #1a1a1a;
+}
+.hamburger.is-open .hamb-top,
+.hamburger.is-open .hamb-bottom {
+  top: 50%;
+  margin-top: -2px;  
+}
+.hamburger.is-open .hamb-top { 
+  -webkit-transform: rotate(45deg);
+  -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
+}
+.hamburger.is-open .hamb-middle { display: none; }
+.hamburger.is-open .hamb-bottom {
+  -webkit-transform: rotate(-45deg);
+  -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
+}
+.hamburger.is-open:before {
+  content: '';
+  display: block;
+  width: 100px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 32px;
+  text-align: center;
+  opacity: 0;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transition: all .35s ease-in-out;
+}
+.hamburger.is-open:hover:before {
+  opacity: 1;
+  display: block;
+  -webkit-transform: translate3d(-100px,0,0);
+  -webkit-transition: all .35s ease-in-out;
+}
+
+.texto-gris-oscuro{color:#282828;}
+.texto-gris-claro{color:#A8A8A8;}
+.testimonial{
+
+}

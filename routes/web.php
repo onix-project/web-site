@@ -1,16 +1,21 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+    Route::group(['prefix' => '', 'middleware'=> 'lang'], function () {
+        Route::get('/', 'indexController@index')->name('index');
+        Route::get('/descarga', 'descargaController@index')->name('descarga');
+        Route::get('/proyecto', 'proyectoController@index')->name('proyecto');
+        Route::get('/ficha', 'fichaController@index')->name('ficha');
+        Route::get('/team', 'teamController@index')->name('team');
+        Route::get('/ayuda', 'ayudaController@index')->name('ayuda');
+        Route::get('/roadmap', 'roadmapController@index')->name('roadmap');
+        Route::get('/plan_estrategico', 'planController@index')->name('plan_estrategico');
+        Route::get('/rentabilidad', function(){
+            return view('pagina::calculadora');
+        })->name('rentabilidad');
+    });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+    Route::get('lenguaje/{lang}', function($lang){
+        Session::put('locale', $lang);
+        App::setLocale($lang);
+        return redirect()->back();
+    })->name('lenguaje');

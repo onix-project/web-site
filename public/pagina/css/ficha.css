@@ -1,0 +1,70 @@
+	.home-ficha{margin-top: 10%}
+.ficha-text h2{margin-bottom: 20px; padding: 15px;}
+
+h2 span{
+    color: #555;
+    font-family: roboto-condensed;
+    font-weight: normal;
+}
+
+.ficha-text h2 span:after{
+	content: " ";
+    border: 1px solid #DFAB00;
+    width: 200px;
+    margin-top: 36px;
+    z-index: 1;
+    position: absolute;
+    display: inline-block;
+    margin-left: -200px;
+}
+.ficha-text h3{color: #515151;line-height: 33px;}
+.exchange{background: #F7F7F7;padding: 43px; margin-top: 20px;}
+.text-exchange h2{margin-bottom: 36px} 
+
+.text-exchange h2 span:after{
+	content: " ";
+	border: 1px solid #DFAB00;
+	width: 15%;
+	margin-top:36px;
+	z-index: 1;
+	position: absolute;
+	display: inline-block; 
+	margin-left: -105px;
+}
+
+.text-ranking h2 span:after{
+	margin-left: -90px;
+}
+
+.text-exchange center{background: white; border: .6px solid #ccc}
+.text-exchange center:hover{-webkit-box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.75);transition: .6s}
+.col-xs-6{margin-bottom: 5px}
+
+.tit_descripcion{
+	color: #000 !important;
+	font-weight: bold;
+    color: #000;
+    font-family: roboto-condensed-bold;
+    font-size: 19px;
+}
+
+#contFichaTecnica div{
+	margin-bottom: 10px;
+}
+
+.center_ranking{
+    margin: 0 auto;
+    width: 80%;
+}
+
+@media (max-width: 425px){
+	.text-exchange h2 span:after{width: 40%;    margin-left: -88px;}
+	.home-ficha{margin-top: 40%;}
+	#contFichaTecnica{font-size: 11pt !important;}
+}
+
+@media (max-width: 320px){
+	#contFichaTecnica{font-size: 8pt !important;}
+}

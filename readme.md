@@ -38,3 +38,25 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+
+#Config AND Installation 
+
+Para installar la pagina oficial de onixcoin debes realizar los siguientes pasos
+
+
+git clone ---Repositorio git
+
+cd --repositoriogit
+
+composer update
+
+remove .example from .env.example
+
+run php artisan config:cache
+
+run php artisan:serve 
+
+Texto sobre recompensa
+
+

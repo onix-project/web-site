@@ -1,0 +1,91 @@
+h2{font-size: 28px}
+.section{ background: #e0ba16; margin-top: 20px}
+.tiques{
+	width: 100%;
+}
+
+.marge-android{margin-left: 12%}
+.text-descarga{margin-top: 5%;margin-bottom: 4%}
+.text-descarga h2 span:after{content: " ";border: 1.5px solid #DFAB00;width: 16%;margin-top:34px;z-index: 1;position: absolute;display: inline-block; left: 10%;}
+.text-descarga p{color: #A4AFB5;margin-top: 2%;font-size: 14pt;margin-bottom: 5%}
+.android{background: #f7f7f7;padding:7%; border-radius: 10px; text-align: center; min-height: 365px;}
+.windows{background: #f7f7f7;padding:7%; border-radius: 10px; text-align: center; min-height: 365px;}
+.linux{background: #f7f7f7;padding:7%; border-radius: 10px; text-align: center; min-height: 365px;}
+.imagenes{
+	margin-top: 36px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.software-miner{background: #F7F7F7;}
+.contenido-soft{margin-top: 5%}
+.software-miner h2{margin-top: 4%}
+.software-miner h2 span:after{content: " ";border: 1.5px solid #DFAB00;width: 41%;margin-top:34px;z-index: 1;position: absolute;display: inline-block; left: 9.5%;}
+.logo-win img{margin-top: 7%}
+.text-soft p{color: #A4AFB5; font-size: 13pt;margin-bottom: 5px}
+.text-soft a{margin-bottom: 8%}
+.btn-descargar{background: #232323;  color: white;padding: 7px 18px;font-size: 11pt;border-radius: 14px;}
+.software-linux h2{margin-top: 4%}
+.software-linux h2 span:after{content: " ";border: 1.5px solid #DFAB00;width: 38%;margin-top:34px;z-index: 1;position: absolute;display: inline-block; left: 9.5%;}
+.zoom {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+}
+.titulo{
+	border: 1px solid #e0ba16;
+    border-bottom-width: 3px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 21%;
+    margin-bottom: 10px;
+}
+.transition {
+    -webkit-transform: scale(1.1); 
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+@media (max-width: 1024px){
+	.text-descarga h2 span:after{left: 6.5%; width: 21%}
+	.software-miner h2 span:after{left: 6.5%;width: 54%}
+	.software-linux h2 span:after{left: 6.5%; width: 50%}
+	.marge-android{margin-left: 0}
+	.android{padding: 35%}
+	.linux{padding: 35%}
+	.windows{padding: 35%}
+}
+@media (max-width: 768px){
+	.text-descarga h2 span:after{width: 27%}
+	.software-miner h2 span:after{width: 70%}
+	.software-linux h2 span:after{width: 68%}
+	.contenido-soft{margin-top: 0}
+	.logo-win img{margin-top: 4%;margin-bottom: 4%}
+	.text-soft p{font-size: 12pt}
+}
+@media (max-width: 425px){
+	.text-descarga{margin-top: 54%}
+	.text-descarga h2 span:after{width: 32%;margin-top: 25px;}
+	.android{padding:15px;}
+	.linux{padding:15px;}
+	.windows{padding:15px;}
+	.text-descarga h2 span:after{width: 44%}
+	.software-miner h2 span:after{width: 84%}
+	.software-linux h2 span:after{width: 78%}
+	h2{font-size: 20px}
+}
+@media (max-width: 320px) {
+	.text-descarga{margin-top: 58%}
+	.andorid{padding:15px}
+	.linux{padding:15px}
+	.windows{padding:15px}
+	.text-descarga p{padding: 7px; text-align: justify; font-size: 10pt}
+	.text-descarga h2 span:after{width: 27%}
+	.software-miner h2 span:after{width: 70%}
+	.software-linux h2 span:after{width: 68%}
+	.contenido-soft{margin-top: 0}
+	.logo-win img{margin-top: 4%;margin-bottom: 4%}
+	.text-soft p{font-size: 12pt}
+}
