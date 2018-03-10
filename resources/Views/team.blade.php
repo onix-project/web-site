@@ -107,6 +107,9 @@
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="contenedorTeam">
 				<div class="container">
+				<br>
+				<br>
+				<br>
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top: 30px;">
 						<h2 style="margin-top:20px; color:#FFF;">
 							<span style="color: #FFF;"> TEAM ONIX </span>
@@ -327,8 +330,8 @@
 
 <script type="text/javascript">
 	var $imagen1, $imagen2;
-	$imagen1 ="{{url('public/img/logos/blanco.png')}}"
-	$imagen2 ="{{url('public/img/logos/blanco.png')}}"
+		$imagen1 ="{{url('public/img/logos/blanco.png')}}"
+		$imagen2 ="{{url('public/img/logos/blanco.png')}}"
 	$(function(){
 		var $carousel = $('#carousel-team');
 		

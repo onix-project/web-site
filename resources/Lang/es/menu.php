@@ -13,5 +13,7 @@
         'opciones'          =>  'Mas Opciones',
         'roadmap'           =>  'RoadMap',
         'proyecto_onix'     =>  'Proyecto Onix',
-        'plan_estrategico'  =>  'Plan estratégico'
+        'plan_estrategico'  =>  'Plan estratégico',
+        'directorio'        =>  'Directorio de comercios',
+        'marco'             =>  'Marco legal',
     ];

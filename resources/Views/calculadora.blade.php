@@ -83,9 +83,9 @@
         <div class="row"  style="padding:20px;">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <center>
-                    <h3 class="titulo">Calculadora de rentabilidad</h3>
+                    <h3 class="titulo">@lang('rentabilidad.titulo')</h3>
                     <h4 class="subtitulo" >
-                        Tu Hashrate de minado
+                        @lang('rentabilidad.hash')
                     </h4>
                 </center>
             </div>
@@ -108,17 +108,17 @@
             </div>
         </div>
         <br>
-        <div clas="row">
+        <div class="row">
             <div class="col-md-10 col-md-offset-1" style="background:#f5f5f5;">
             <br>
             <div class="table-responsive">
                 <table class="table table-borderless">
                     <thead>
-                        <th > <div class="moneda-pill"> MONEDA</div></th>
-                        <th ><div class="top"> Dia </div></th>
-                        <th ><div class="top"> Semana</div></th>
-                        <th ><div class="top"> Mes </div></th>
-                        <th ><div class="top"> Año </div></th>
+                        <th > <div class="moneda-pill">@lang('rentabilidad.moneda')</div></th>
+                        <th ><div class="top"> @lang('rentabilidad.dia') </div></th>
+                        <th ><div class="top"> @lang('rentabilidad.week')</div></th>
+                        <th ><div class="top"> @lang('rentabilidad.mes') </div></th>
+                        <th ><div class="top"> @lang('rentabilidad.anno')</div></th>
                     </thead>
                     <tbody>
                         <tr style="padding-bottom:5px;">
@@ -158,7 +158,8 @@
 	$imagen2 ="{{url('public/img/logos/blanco.png')}}"
 </script>
 <script>
-    var price_usd=0; 
+    var price_usd = 0;
+    var $price_usd = 0;
     $(function(){
         $('#calc').click(function(e){
             e.preventDefault();
@@ -168,7 +169,7 @@
     });
 
     function infoONX(prices_btc){
-        $.getJSON('https://explorer.onixcoin.com/ext/summary', function( json ) {
+        $.getJSON('{{ route('precios') }}', function( json ) {
             coins_day = 28800;
             hashrate = json.data[0].hashrate ;
             price = prices_btc;
@@ -177,22 +178,24 @@
 
             result = (hashing_power/power_selector)*coins_day/hashrate;
             gains = result*price;
-            console.log(json);
 
-            $('#onx_dia').text(result.toFixed(8));
-            $('#onx_semana').text(result.toFixed(8) * 7);
-            $('#onx_mes').text(result.toFixed(8) * 30);
-            $('#onx_anno').text(result.toFixed(8) * 365);
+            $onx_dia = result.toFixed(8);
+            $btc_dia = gains.toFixed(8);
 
-            $('#btc_dia').text(gains.toFixed(8));
-            $('#btc_semana').text(gains.toFixed(8) * 7);
-            $('#btc_mes').text(gains.toFixed(8) * 30);
-            $('#btc_anno').text(gains.toFixed(8) * 365);
+            $('#onx_dia').text($onx_dia);
+            $('#onx_semana').text(($onx_dia * 7).toFixed(8));
+            $('#onx_mes').text(($onx_dia * 30).toFixed(8));
+            $('#onx_anno').text(($onx_dia * 365).toFixed(8));
 
-            $('#usd_dia').text(result.toFixed(8) * price_usd);
-            $('#usd_semana').text(( result.toFixed(8) *price_usd) * 7);
-            $('#usd_mes').text(( result.toFixed(8) *price_usd) * 30);
-            $('#usd_anno').text(( result.toFixed(8) *price_usd) * 365);
+            $('#btc_dia').text($btc_dia);
+            $('#btc_semana').text(($btc_dia * 7).toFixed(8));
+            $('#btc_mes').text(($btc_dia * 30).toFixed(8));
+            $('#btc_anno').text(($btc_dia * 365).toFixed(8));
+
+            $('#usd_dia').text(($onx_dia * price_usd).toFixed(8));
+            $('#usd_semana').text((( $onx_dia *price_usd) * 7).toFixed(8));
+            $('#usd_mes').text((( $onx_dia *price_usd) * 30).toFixed(8));
+            $('#usd_anno').text((( $onx_dia *price_usd) * 365).toFixed(8));
             $('.moneda-blanca').show();
             return true;
         });
@@ -203,7 +206,7 @@
             type: 'get',
             dataType: 'json',            
             success: function (price_json) {
-                console.log(price_json);
+                //console.log(price_json);
                 price_btc = price_json[0]['price_btc'];
                 price_usd = price_json[0]['price_usd'];
                 infoONX(price_btc);

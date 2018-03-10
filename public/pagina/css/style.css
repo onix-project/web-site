@@ -33,8 +33,9 @@ Version      : 1.0
     padding: 22px 10px;
     border-radius: 6px;
     margin-top: -85px !important;
-    position: absolute;
-    left: 9%;
+    position:relative;
+    z-index: 500;
+   
 }
 .navbar-header{width: 36%}
 @media (max-width: 360px){
@@ -450,12 +451,9 @@ color: #333!important;}
 * 03.START HOME DESIGN
 * ----------------------------------------------------------------------------------------
 */
-.home-parallax {position: relative;height:670px;}
+.home-parallax {position: relative;height:550px;}
 @media only screen and (min-width:1441px) { 
     .home-parallax {height: 900px;}
-    #indicadores {
-        left: 25%;
-    }
 }
 @media only screen and (max-width:1070px) { 
     .home-parallax {height: 800px;}
@@ -465,9 +463,6 @@ color: #333!important;}
     }
     .indicador-text{
         width: 100% !important;
-    }
-    #indicadores {
-        left: 4%;
     }
     .list-indicador{
         background: #fff;
@@ -540,9 +535,6 @@ text-transform: capitalize;
     }
     .navbar-default .navbar-nav > li > a {
         font-size: 0.8em;
-    }
-    #indicadores {
-        left: 3%;
     }
 }
 

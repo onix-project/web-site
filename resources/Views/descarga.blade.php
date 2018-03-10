@@ -44,12 +44,12 @@
 							<img class="img-responsive imagenes" src="{{url('public/pagina/img/index/windows.png')}}" alt="linux">
 							<a href="#"><h3>Windows</h3></a>
 							<a href="#"><h4 style="color:#949292">32 bit / 64 bit</h4></a>
-							<a href="#"><h4>20.2 MB</h4></a>
+							<a href="#"><h4>10.7 MB</h4></a>
 							<div class="descargar" style="color:#949292; margin-top: 31px;">
 								<label>Onix_wallet.exe</label>
 							</div>
 							<div class="descargar" style="margin-top: 31px;">
-								<a class="btn text-soft btn-default btn-descargar" href="#">		@lang('descarga.descargar')
+								<a class="btn text-soft btn-default btn-descargar" href="{{url('public/download/ONIX.rar')}}">		@lang('descarga.descargar')
 								</a>
 							</div>
 						</div>

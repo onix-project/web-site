@@ -1,6 +1,6 @@
 <?php
     return [
-        'conoce_team'               => "Conoce al equipo que está detrás del proyecto Onix",
+        'conoce_team'               => "Meet the team behind Onix project",
         'estudios'                  => "Studies",
         'habilidades'               => "Skills",
         'lenguajes'                 => "Languages",
@@ -38,7 +38,7 @@
         'lenguajes_jimenez'         => '​​Php, Django, JavaScript, Vuejs, Html5, Css3, Bootstrap.',
 
         //Mayrene Salcedo
-        'cargo_salcedo'             => "GRAPHIC DESIGN",
+        'cargo_salcedo'             => "CREATIVE DIRECTOR",
         'estudios_salcedo'          => 'Graphic and Web Designer Visual Communicator.',
         'skills_salcedo'            => 'Photoshop, Illustrator, After Effects, Invision, Adobe Indesign.',
 

@@ -13,7 +13,7 @@
         ],
         'mision'        => [
             'titulo'    =>'Misión',
-            'parrafo'   =>'Optimizar la red de pagos, la falta de efectivo, la dificultad para acceder a mercados internacionales, mediante la utilización de la tecnología blockchain y una criptomoneda de clase mundual.'
+            'parrafo'   =>'Optimizar la red de pagos, la falta de efectivo, la dificultad para acceder a mercados internacionales, mediante la utilización de la tecnología blockchain y una criptomoneda de clase mundial.'
         ],
         'conoce'=>[
             'titulo'    =>'Conoce a ',

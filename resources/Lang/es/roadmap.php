@@ -9,18 +9,25 @@ return [
                 '2018' => [
                     'enero'     => [
                                         'mes' => 'ENERO', 
-                                        'contenido' => '<p>Desarrollar una API REST y web socket para facilitar las integraciones de aplicaciones con la blockchain de onix.</p>
-                                            <p>Desarrollar e implementar la versión 3 del centro de ventas de Onix.</p>' 
+                                        'contenido' => '<p><i class="fa fa-check-circle" title="Proyecto terminado satisfactoriamente." data-toggle="tooltip"></i> Desarrollar una API REST y web socket para facilitar las integraciones de aplicaciones con la blockchain de onix. 
+                                            
+                                            
+                                            </p>
+                                            <p><i class="fa fa-check-circle" title="Proyecto terminado satisfactoriamente." data-toggle="tooltip"></i>  Desarrollar e implementar la versión 3 del centro de ventas de Onix.
+                                            </p>' 
                                     ],
                     'febrero'   => [
                                         'mes' => 'FEBRERO', 
-                                        'contenido' => '<p>Implementar Test net para las pruebas de las mejoras que se aplicará al core 
-                                            de Onix coin</p>
-                                            <p>Desplegar en ambiente de producción el pool de minería oficial del proyecto Onix.</p>' 
+                                        'contenido' => '
+                                            <p><i class="fa fa-check-circle" title="Proyecto terminado satisfactoriamente." data-toggle="tooltip"></i> Desplegar en ambiente de producción el pool de minería oficial del proyecto Onix. </p>
+
+                                            <p> Implementar Test net para las pruebas de las mejoras que se aplicará al core 
+                                            de Onix coin. </p>
+                                            ' 
                                     ],
                     'marzo'     => [
                                     'mes' => 'MARZO ', 
-                                    'contenido' => '<p>Reestructurar la página web del proyecto Onix.</p>' 
+                                    'contenido' => '<p><i class="fa fa-check-circle" title="Proyecto terminado satisfactoriamente." data-toggle="tooltip"></i> Reestructurar la página web del proyecto Onix. </p>' 
                                 ],
                     'abril'     => [
                                     'mes' => 'ABRIL', 
@@ -63,6 +70,7 @@ return [
                 'definicion' => '<p>
                       Se encargará de desarrollar sistemas de escritorio y web, para integrar la red Onixcoin a la mayor cantidad de sistemas administrativos y contables que sea posible, primero en Venezuela y luego en diferentes países objetivos.
 
+
                     </p>
                     <br>
                     <p>
@@ -80,7 +88,7 @@ return [
                                 ],
                     'febrero'   => [
                                         'mes' => 'FEBRERO', 
-                                        'contenido' => '<p>Directorio web para gestión de los comercios que reciban Onixcoin como método de pago </p>
+                                        'contenido' => '<p><i class="fa fa-check-circle" title="Proyecto terminado satisfactoriamente." data-toggle="tooltip"></i> Directorio web para gestión de los comercios que reciban Onixcoin como método de pago </p>
                                             ' 
                                     ],
                     'marzo'     => [

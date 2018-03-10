@@ -1,17 +1,18 @@
 <?php
     return [
-        'indicadores'       =>  'Indicadores',//falta por traducir
+        'indicadores'       =>  'Indicators',//falta por traducir
         'acerca'            =>  'About',
         'comprar'           =>  'Buy Onix',
-        'comercios'         =>  'Comercios',//falta por traducir
         'explorer'          =>  'Explorer',
         'pool'              =>  'Minning Pool',
-        'comunidad'         =>  'Community',
+        'comunidad'         =>  'Onix Community',
         'team'              =>  'Team Onix',
         'descargas'         =>  'Downloads',
-        'calculadora'       =>  '',
+        'calculadora'       =>  'Profitability Calculator',
         'opciones'          =>  'More Options',
         'roadmap'           =>  'RoadMap',
-        'proyecto_onix'     =>  'Proyecto Onix',
-        'plan_estrategico'  =>  'Plan estratégico'
+        'proyecto_onix'     =>  'Onix Project',
+        'plan_estrategico'  =>  'Strategic Plan',
+        'directorio'        =>  'Commerce Directory',
+        'marco'             =>  'Legal Framework of the crypto-currency',
     ];

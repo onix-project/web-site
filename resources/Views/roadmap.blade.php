@@ -60,12 +60,14 @@
                             <label style="font-size: 17px; color: #E0B913; float: right; margin-right: 31px;">2018</label>
                           </div>
                           <div  class="meses" style="margin-top: -9px; border: 1px solid #4d4d4d;border-top: none; border-left: none;border-right: none;">
+
                             <label style="font-size: 23px; color: #000; float: right; margin-right: 2px;">  @lang('roadmap.core1.2018.enero.mes')
                             </label>
                           </div>
                           </div>
                           <div class="tl-body wow fadeInDown" data-wow-delay="0.5s" style="float: left;">
                             @lang('roadmap.core1.2018.enero.contenido')
+                            
                           </div>
                         </div>
                       </li>
@@ -90,6 +92,7 @@
                             </div>
                             <div class="tl-body wow fadeInDown wow fadeInDown" style="float: left;">
                               @lang('roadmap.core1.2018.febrero.contenido')
+                              
                             </div>
                           </div>
                       </li>
@@ -113,6 +116,7 @@
                           </div>
                           <div class="tl-body wow fadeInDown" style="float: left;">
                             @lang('roadmap.core1.2018.marzo.contenido')
+                            
                           </div>
                         </div>
                       </li>
@@ -373,7 +377,11 @@
                           </div>
                           </div>
                           <div class="tl-body wow fadeInDown" style="float: left;">
-                            @lang('roadmap.enterprise1.2018.febrero.contenido')
+                            
+                                @lang('roadmap.enterprise1.2018.febrero.contenido')
+                           
+                            
+                            
                           </div>
                         </div>
                       </li>
@@ -1588,9 +1596,11 @@
   <script src="{{asset('public/js/roadmap.js')}}"></script>
 
  <script>
-      var $imagen1, $imagen2;
-      $imagen1 ="{{url('public/img/logos/blanco.png')}}"
-      $imagen2 ="{{url('public/img/logos/blanco.png')}}"
+      var $imagen1, $imagen2, $imgRealizado, $imagen;
+      $imagen1 ="{{url('public/img/logos/blanco.png')}}";
+      $imagen2 ="{{url('public/img/logos/blanco.png')}}";
+      $imgRealizado ="url({{url('public/img/roadmap/check.png')}})";
+     
 </script>
 @endpush
 

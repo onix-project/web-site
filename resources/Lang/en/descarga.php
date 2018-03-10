@@ -1,7 +1,7 @@
 <?php
     return [
         'titulo_descarga_wallet' 			=> "Download wallet",
-        'subtitulo_descarga_wallet' 		=> "Haz clic sobre el software de tu preferencia e inicia la descarga automático.", 
+        'subtitulo_descarga_wallet' 		=> "Click the software of your choice and start the automatic download", 
         
         // Windows
         'titulo_descarga_mineria_windows' 	=> "Download Mining Software for Windows",

@@ -16,6 +16,7 @@
   padding: 17px;
   border-radius: 28px;
  }
+
  p{
     padding: 11px;
  }
@@ -546,14 +547,7 @@ p{
 .btn-info{
   font-size: 15px !important;
 }
-.realizado{
-    border: 1px solid #00bf30;
-    height: 30px;
-    width: 30px;
-    border-radius: 24px;
-    z-index: 1;
-    margin-top: -111px;
-    margin-left: 262px;
-    margin-bottom: 61px;
-    background: #3ffd47;
-}
+
+ .fa-check-circle{
+    color: #95b313;
+  }

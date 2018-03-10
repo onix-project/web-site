@@ -45,9 +45,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 Para installar la pagina oficial de onixcoin debes realizar los siguientes pasos
 
 
-git clone ---Repositorio git
+git clone https://github.com/onix-project/web-site.git
 
-cd --repositoriogit
+cd web-site
 
 composer update
 
@@ -56,7 +56,5 @@ remove .example from .env.example
 run php artisan config:cache
 
 run php artisan:serve 
-
-Texto sobre recompensa
 
 

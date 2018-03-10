@@ -23,6 +23,21 @@
 		.navbar-default.menu-shrink .navbar-nav > li > a{
 			color: #fff !important;
 		}
+		#indicadores2{
+			background: #282828;
+			padding: 22px 10px;
+			border-radius: 6px;
+			margin-top: -85px !important;
+			text-align:center;
+			position:relative;
+			z-index:1000;
+		}
+		.redondo{
+			padding:10px;
+			border-radius:5px;
+			background:#BDBDBD;
+			color:#000;
+		}
 		
 	</style>
 @endpush
@@ -88,7 +103,7 @@
 		<!-- START HOME -->
 		<div id="carousel-banner" class="hidden-xs">
 			<div class="item">
-				<section data-stellar-background-ratio="0.3" id="home" class="home-parallax"  style="background-image: url({{url('public/pagina/img/bg/BANNER.png)')}};  background-size:cover; background-position: center;">
+				<section data-stellar-background-ratio="0.3" id="home" class="home-parallax"  style="background-image: url({{url('public/pagina/img/bg/BANNER.jpg)')}}; background-repeat:no-repeat;  background-size:cover; background-position: center;">
 				
 					<div class="container">
 						<div class="row">
@@ -96,7 +111,7 @@
 								<div class="hero-text pt250" style="font-style: italic;">
 										<center><h3 style="font-size: 28px">@lang('index.banner_1.primary')</h3>
 										<h1 style="font-size: 44px">		@lang('index.banner_1.secundary')</h1>
-										<p><a class="block-menu" href="#">	@lang('index.banner_1.third')</a></p></center>
+										</center>
 									<div class="">
 										<center><a href="https://play.google.com/store/apps/details?id=com.onix.wallet" class="" ><img src="{{url('public/pagina/img/googleplay.png')}}" alt="image"></a></center>
 									</div>
@@ -118,12 +133,12 @@
 							<div class="col-md-6 col-sm-12 col-xs-12">
 								<div class="hero-text pt250">
 									<center>
-									<center style="font-style: italic;"><h3 style="font-size: 28px">¡ YA PUEDES </h3>
-										<h1 style="font-size: 44px">COMPRAR ONIX !</h1>
-										<h3 style="font-size: 28px">Ingresa al centro de ventas de Onix</h3>
+									<center style="font-style: italic;"><h3 style="font-size: 28px">@lang('index.banner_2.primary')</h3>
+										<h1 style="font-size: 44px">@lang('index.banner_2.secundary')</h1>
+										<h3 style="font-size: 28px">@lang('index.banner_2.third')</h3>
 									</center>
 									<div class="">
-										<center><a href="#feature" class="btn yellow" style="color: #000; font-weight: bold; margin-top: 10px;"> COMPRA YA </a></center>
+										<center><a href="https://ventas.onixcoin.com/" target="_blank" class="btn yellow" style="color: #000; font-weight: bold; margin-top: 10px;">@lang('index.banner_2.now') </a></center>
 									</div>
 								</div> 
 							</div><!-- END COL-->
@@ -137,15 +152,21 @@
 				</section>
 			</div>
 			<div class="item">
-				<a href="{{route('plan_estrategico')}}">
-					<section data-stellar-background-ratio="0.3" id="home" class="home-parallax"  style="background-image: url({{url('public/pagina/img/bg/banner_plan.jpg)')}};  background-size:cover; background-position: center center;">
+				<a href="https://directorio.onixcoin.com/" target="_blank">
+					<section data-stellar-background-ratio="0.3" id="home" class="home-parallax"  style="background-image: url({{url('public/pagina/img/bg/comercios.jpg)')}};  background-size:cover; background-position: center center;">
+						<div class="col-md-4 col-md-offset-6" style="padding-top:95px;">
+							<h1 class="text-center" style="font-style: italic;">@lang('index.banner_3.primary')</h1>
+							<h1 class="text-center" style="font-style: italic;">@lang('index.banner_3.secundary')</h1>
+							<h3 class="text-center" style="font-style: italic;">@lang('index.banner_3.third')</h3>
+							<center><a href="https://directorio.onixcoin.com/" class="btn yellow" style="color: #000; font-weight: bold; margin-top: 10px;">@lang('index.banner_3.button')</a></center>
+						</div>
 					</section>
 				</a>
 			</div>
 		</div>
 		<div id="movil-banner" class="hidden-sm hidden-md hidden-lg">
 			<div   class="item">
-				<a href="{{url('descarga')}}">
+				<a href="https://play.google.com/store/apps/details?id=com.onix.wallet">
 					<img width="100%" src="{{url('public/pagina/img/bg/movil/banner1.jpg')}}" alt="">
 				</a>
 			</div>
@@ -155,38 +176,38 @@
 				</a>
 			</div>
 			<div   class="item">
-				<a href="{{url('plan_estrategico')}}">
-					<img width="100%" src="{{url('public/pagina/img/bg/movil/banner3.jpg')}}" alt="">		
+				<a href="https://directorio.onixcoin.com/">
+					<img width="100%" src="{{url('public/pagina/img/bg/movil/banner4.jpg')}}" alt="">		
 				</a>
 			</div>
 		</div>
 
 		<!-- END  HOME DESIGN -->
-		<section id="indicadores" class="block-center container "> 
-			<center>
-				<ul>
-					<li class="indicador-text">
-						<b>INDICADORES</b>
-					</li>
-					<li class="list-indicador">
-						<span id="ONX_BTC" class="indicador-span"> <span class="unidad"><strong> ONX/BTC: {{ number_format($precios->onx_btc, 8, ',', '.') }}</strong> </span>  </span>
-					</li>
-					<li class="list-indicador">
-						<span id="ONX_USD" class="indicador-span">  <span class="unidad"><strong> ONX/USD: {{ number_format($precios->onx_usd, 3, ',', '.') }} </strong></span> </span>
-					</li>
-					<li class="list-indicador list-yellow">
-						<span id="ONX_BSF" class="yellow indicador-span">  
-							<span class="unidad"><strong> ONX/VEF: {{ number_format($precios->onx_bsf_compra, 2, ',', '.') }} </strong></span> 
-						</span>
-					</li>
-					<li class="list-indicador">
-						<span id="VOL_24h" class="indicador-span">  <span class="unidad"><strong> Vol 24h: {{ number_format($precios->volumen, 2, ',', '.') }} USD</strong> </span> </span>
-					</li>
-				</ul>
-			</center>
-			
-		</section>
-
+		<div class="container">
+			<section id="indicadores" class="block-center  "> 
+				<center>
+					<ul>
+						<li class="indicador-text">
+							<b>INDICADORES</b>
+						</li>
+						<li class="list-indicador">
+							<span id="ONX_BTC" class="indicador-span"> <span class="unidad"><strong> ONX/BTC: {{ number_format($precios->onx_btc, 8, ',', '.') }}</strong> </span>  </span>
+						</li>
+						<li class="list-indicador">
+							<span id="ONX_USD" class="indicador-span">  <span class="unidad"><strong> ONX/USD: {{ number_format($precios->onx_usd, 3, ',', '.') }} </strong></span> </span>
+						</li>
+						<li class="list-indicador list-yellow">
+							<span id="ONX_BSF" class="yellow indicador-span">  
+								<span class="unidad"><strong> ONX/VEF: {{ number_format($precios->onx_bsf_compra, 2, ',', '.') }} </strong></span> 
+							</span>
+						</li>
+						<li class="list-indicador">
+							<span id="VOL_24h" class="indicador-span">  <span class="unidad"><strong> Vol 24h: {{ number_format($precios->volumen, 2, ',', '.') }} USD</strong> </span> </span>
+						</li>
+					</ul>
+				</center>
+			</section>
+		</div>
 		<!-- START ABOUT -->
 		<section class="about-one section-padding">
 			<div class="secciones" style="background:#f2f2f2;">
@@ -204,7 +225,7 @@
 					<div class="col-md-5 col-sm-12 col-xs-12 text-center" style="padding-left: 40px">
 					<br>
 					<br>
-						<iframe width="100%" height="250" src="https://www.youtube.com/embed/jZJqHFeCf74" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						<iframe width="100%" height="250" src="{{url('public/video/onx.mp4')}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							<!--<div id="about-slider" class="owl-carousel">
 
 								<div class="single_about_img">
@@ -299,7 +320,7 @@
 				<div class="container">
 					<br>
 					<div class="col-md-6 col-md-offset-3">
-						<h1 class="text-center">Descarga nuestra wallet Onix</h1>
+						<h1 class="text-center">@lang('index.descarga')</h1>
 						<br>
 						<center>
 							<img style="padding-right:15px;" src="{{asset('public/pagina/img/index/windows.png')}}" alt="">
@@ -309,11 +330,11 @@
 						<center>
 							<br>
 							
-							<a href="{{url('descarga')}}" class="btn" style="background-color:#282828; border-radius:10px; text-decoration:none; color:#f2f2f2;">Descargar App</a>
+							<a href="{{url('descarga')}}" class="btn" style="background-color:#282828; border-radius:10px; text-decoration:none; color:#f2f2f2;">@lang('index.descarga_app')</a>
 						</center>
 						<br>
-						<p class="text-center">Descarga tu wallet para disfrutar</p>
-						<p class="text-center"><small> de los beneficios que te ofrece Onix</small></p>
+						<p class="text-center">  @lang('index.desc_parr')</p>
+						<p class="text-center"><small>@lang('index.desc_parr2')</small></p>
 					</div>
 				</div>
 			<br>			
@@ -323,10 +344,15 @@
 			<div class="container">
 				<br>
 				<br>
-				<h1 class="text-center">Comienza a minar Onixcoin</h1>
+				<h1 class="text-center">@lang('index.mining')</h1>
 				<center>
-					<img class="img-responsive" src="{{url('public/pagina/img/index/mineria_index.png')}}" alt="">
-					<a href="#" class="btn yellow" style="border-radius:10px; text-decoration:none; color:#282828;">Comenzar Ahora</a>							
+					@if(Session::get('locale') == 'en')
+						<img class="img-responsive" src="{{url('public/pagina/img/index/mineria_index_en.png')}}" alt="">
+					@else
+						<img class="img-responsive" src="{{url('public/pagina/img/index/mineria_index.png')}}" alt="">
+					@endif
+					
+					<a href="#" class="btn yellow" style="border-radius:10px; text-decoration:none; color:#282828;">@lang('index.start')</a>							
 				</center>
 				<br>
 				<br>
@@ -346,6 +372,7 @@
 							<p>@lang('index.noticias.parrafo')</p>
 						</div>
 						
+					
 						
 						
 					</div>

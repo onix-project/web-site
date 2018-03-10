@@ -6,6 +6,18 @@
             'secundary' =>  'WALLET ONIX ANDROID',
             'third'     =>  '¡Descarga ahora!'   
         ],
+        'banner_2' => [
+            'primary'   =>  '¡YA PUEDES ',
+            'secundary' =>  'COMPRAR ONIX!',
+            'third'     =>  'Ingresa al centro de ventas de Onix',   
+            'now'     =>  'COMPRA YA'   
+        ],
+        'banner_3' => [
+            'primary'   =>  'ENCUENTRA',
+            'secundary' =>  'LOS COMERCIOS',
+            'third'     =>  'Que aceptan Onix en tu localidad',
+            "button"    =>  'HAZ CLICK AQUI'    
+        ],
         'dinero'        =>  'Onixcoin dinero digital totalmente descentralizado.',
         'texto_onix'    =>  'ONIX es una moneda digital enfocada en la 
                              privacidad, con transacciones instantáneas y de código abierto. 
@@ -41,7 +53,15 @@
         'noticias'=>[
             'titulo'=>'Últimas noticias',
             'parrafo'=>'Entérate de los últimos acontecimientos de Onixcoin.'
-        ]
+        ],
+
+        'mining'    =>   'Comienza a minar Onixcoin',
+        'start'     =>   'Comienza Ahora',
+        'descarga'  =>   'Descarga nuestra wallet Android',
+        'descarga_app'  =>   'Descargar app',
+        'desc_parr' =>   'Descarga tu wallet para disfrutar',
+        'desc_parr2' =>   'de los beneficios que te ofrece Onix',
+
     ];
 
     

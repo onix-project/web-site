@@ -9,18 +9,20 @@ return [
             '2018' => [
                 'enero'     => [
                                 'mes' => 'JANUARY', 
-                                'contenido' => '<p>To develop an API REST and a web socket to facilitate the integrations of the applications with the Onix’s Blockchain</p>
-                                    <p>To develop and implement the 3.0 version of the Onix´s sales center.</p>' 
+                                'contenido' => '<p><i class="fa fa-check-circle" title="Proyecto terminado satisfactoriamente." data-toggle="tooltip"></i> To develop an API REST and a web socket to facilitate the integrations of the applications with the Onix’s Blockchain</p>
+                                    <p> <i class="fa fa-check-circle" title="Proyecto terminado satisfactoriamente." data-toggle="tooltip"></i> To develop and implement the 3.0 version of the Onix´s sales center.</p>' 
                                 ],
                 'febrero'   => [
                                 'mes' => 'FEBRUARY ', 
-                                'contenido' => '<p>To implement Test net to make the improvements’ tests that will be applied to the core of the Onix coin.</p>
-                                <p>To deploy the official mining pool of the Onix project
-                                </p>
+                                'contenido' => '
+                                    <p><i class="fa fa-check-circle" title="Proyecto terminado satisfactoriamente." data-toggle="tooltip"></i> To deploy the official mining pool of the Onix project
+                                    </p>
+                                    <p> <i class="fa fa-check-circle" title="Proyecto terminado satisfactoriamente." data-toggle="tooltip"></i> To implement Test net to make the improvements’ tests that will be applied to the core of the Onix coin.</p>
+                                
                             ' ],
                 'marzo'     => [
                                 'mes' => 'MARCH', 
-                                'contenido' => '<p>To restructure the Onix Project web page.
+                                'contenido' => '<p><i class="fa fa-check-circle" title="Proyecto terminado satisfactoriamente." data-toggle="tooltip"></i> To restructure the Onix Project web page.
                                 </p>' 
                             ],
                 'abril'     => [
@@ -79,7 +81,7 @@ return [
                                 ],
                 'febrero'   => [
                                 'mes' => 'FEBRUARY ', 
-                                'contenido' => '<p>To create a web directory for the management of the shops that receive Onixcoin as a payment method.</p>
+                                'contenido' => '<p><i class="fa fa-check-circle" title="Proyecto terminado satisfactoriamente." data-toggle="tooltip"></i> To create a web directory for the management of the shops that receive Onixcoin as a payment method.</p>
                             ' ],
                 'marzo'     => [
                                 'mes' => 'MARCH', 

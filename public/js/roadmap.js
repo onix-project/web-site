@@ -40,4 +40,7 @@ $(function(){
 			}
 		});
 	});
+	$('[data-toggle="tooltip"]').each(function(x, y){
+		$(y).tooltip(); 
+	});
 });

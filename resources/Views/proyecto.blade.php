@@ -89,11 +89,11 @@
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 contConoceOnix" style="margin-top: 20px;">
 		      <div class="container div-principal center-block ">
 		      	<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-8 col-md-8 col-sm-8 col-xs-12">
+              <br>
 			      	<h1 class="text-center titulo_subrayado" style="font-weight: normal; padding: 10px;"> 
-			      		<span style="font-family: roboto-condensed !important;" > @lang('proyecto.conoce.titulo') </span> 
-			      		<b> @lang('proyecto.onixcoin') </b> 
+			      		<span style="font-family: roboto-condensed !important;" > @lang('proyecto.conoce.titulo') </span>  
 			      	</h1>
-			      	<h3 class="text-center" style="color:#A8A8A8; font-weight: normal;"> @lang('proyecto.conoce.parrafo') </h3>
+			      	<p class="text-center" style="color:#000; font-weight: normal;"> @lang('proyecto.conoce.parrafo') </p>
 		      	</div>
 		      </div>
 		    </div>
